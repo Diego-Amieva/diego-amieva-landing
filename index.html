@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Amieva | B2B Digital Marketing &amp; Google Ads Consulting</title>
+  <meta name="description" content="Professional B2B Digital Marketing &amp; Google Ads Consulting by Diego Amieva. Search campaign management (SEM), GA4 &amp; GTM conversion tracking, and executive performance reporting.">
+  <meta name="author" content="Diego Amieva">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diego Amieva | B2B Digital Marketing &amp; Google Ads Consulting">
+  <meta property="og:description" content="Helping B2B companies and consulting firms structure, optimize, and scale Google Ads search campaigns with accurate conversion tracking and advanced analytics.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_MX">
+
+  <!-- Structured Data for Commercial Profile Verification -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Diego Amieva — B2B Digital Marketing & Google Ads Consulting",
+    "founder": {
+      "@type": "Person",
+      "name": "Diego Amieva"
+    },
+    "description": "B2B digital marketing consulting specializing in Google Ads search campaign management (SEM), GA4 and Google Tag Manager conversion tracking, and executive technical auditing.",
+    "email": "mailto:diego.amieva.olvera@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santiago de Querétaro",
+      "addressRegion": "Querétaro",
+      "addressCountry": "MX"
+    },
+    "areaServed": ["MX", "US", "International"],
+    "knowsLanguage": ["en", "es"]
+  }
+  </script>
+
+  <!-- Typography: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Smooth scrolling respecting motion preferences */
+    @media (prefers-reduced-motion: no-preference) {
+      html {
+        scroll-behavior: smooth;
+      }
+    }
+
+    /* Targeted typographic legibility */
+    h1, h2, h3 {
+      text-wrap: balance;
+    }
+
+    p, li {
+      text-wrap: pretty;
+    }
+
+    /* Visually hidden utility keeping skip links accessible on focus */
+    .visually-hidden:where(:not(:focus-within, :active)) {
+      position: absolute !important;
+      clip-path: inset(50%) !important;
+      overflow: hidden !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: -1px !important;
+      padding: 0 !important;
+      border: 0 !important;
+      white-space: nowrap !important;
+    }
+
+    /* High-contrast keyboard focus ring */
+    :where(a:any-link, button):focus-visible {
+      outline: 2px solid #1d4ed8;
+      outline-offset: 3px;
+    }
+
+    .dark-surface :where(a:any-link, button):focus-visible {
+      outline: 2px solid #60a5fa;
+      outline-offset: 3px;
+    }
+
+    /* Minimum 24x24 CSS px interactive targets */
+    button,
+    .interactive-target {
+      min-inline-size: 24px;
+      min-block-size: 24px;
+    }
+
+    /* Subtle corporate architectural grid background */
+    .hero-grid {
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.07), transparent 65%),
+        linear-gradient(to right, rgba(226, 232, 240, 0.55) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.55) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
+    }
+
+    /* Copy button confirmation bubble using opacity so live region stays in accessibility tree */
+    .copy-button .icon-check {
+      display: none;
+    }
+    .copy-button[data-copied] .icon-copy {
+      display: none;
+    }
+    .copy-button[data-copied] .icon-check {
+      display: inline-block;
+    }
+
+    .copy-tip {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease;
+    }
+    .copy-button[data-copied] + .copy-tip,
+    .copy-button[data-failed] + .copy-tip {
+      opacity: 1;
+    }
+
+    /* Native modal dialog scroll containment (no root overflow locking) */
+    dialog:modal {
+      overscroll-behavior: contain;
+    }
+
+    dialog::backdrop {
+      overflow: hidden;
+      overscroll-behavior: contain;
+      background-color: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body id="top" class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- Accessible Skip Link -->
+  <a
+    href="#hero-heading"
+    data-i18n="skipLink"
+    class="visually-hidden fixed top-3 left-3 z-50 rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white shadow-lg"
+  >
+    Skip to main content
+  </a>
+
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8">
+      <!-- Brand Identity -->
+      <a href="#top" class="interactive-target group inline-flex items-center gap-3 rounded-md py-1 text-slate-900">
+        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-900 text-xs font-bold tracking-wider text-white transition-colors group-hover:bg-blue-700" aria-hidden="true">
+          DA
+        </span>
+        <span class="flex flex-col">
+          <span class="text-sm font-semibold tracking-tight text-slate-900 sm:text-base">Diego Amieva</span>
+          <span data-i18n="headerTagline" class="hidden text-xs font-medium text-slate-500 sm:block">B2B Marketing &amp; Google Ads</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-3 sm:gap-6">
+        <!-- Primary In-Page Navigation -->
+        <nav aria-label="Primary" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm font-medium text-slate-600">
+            <li>
+              <a href="#services" data-i18n="navServices" class="interactive-target inline-flex items-center py-1 transition-colors hover:text-blue-700">Services</a>
+            </li>
+            <li>
+              <a href="#approach" data-i18n="navApproach" class="interactive-target inline-flex items-center py-1 transition-colors hover:text-blue-700">Approach</a>
+            </li>
+            <li>
+              <a href="#contact" data-i18n="navContact" class="interactive-target inline-flex items-center py-1 transition-colors hover:text-blue-700">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Functional Language Switcher (EN / ES) in Top-Right Corner -->
+        <div
+          role="group"
+          aria-label="Language / Idioma"
+          class="inline-flex items-center rounded-lg border border-slate-200 bg-slate-100 p-0.5"
+        >
+          <button
+            type="button"
+            data-lang-btn="en"
+            aria-pressed="true"
+            class="rounded-md px-3 py-1.5 text-xs font-semibold tracking-wide transition-all bg-white text-blue-700 shadow-sm"
+          >
+            EN<span class="visually-hidden"> — English</span>
+          </button>
+          <button
+            type="button"
+            data-lang-btn="es"
+            aria-pressed="false"
+            lang="es"
+            class="rounded-md px-3 py-1.5 text-xs font-semibold tracking-wide transition-all text-slate-600 hover:text-slate-900"
+          >
+            ES<span class="visually-hidden"> — Español</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-grid relative border-b border-slate-200/80 pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-28 lg:pb-32">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <!-- Eyebrow Badge -->
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-blue-800">
+            <span class="h-2 w-2 rounded-full bg-blue-600" aria-hidden="true"></span>
+            <span data-i18n="heroBadge">Independent Commercial Consulting Practice</span>
+          </div>
+
+          <!-- Primary Heading: Brand + Subtitle -->
+          <h1 id="hero-heading" tabindex="-1" class="tracking-tight text-slate-900 focus:outline-none">
+            <span class="block text-sm font-semibold uppercase tracking-widest text-blue-700 sm:text-base">
+              Diego Amieva
+            </span>
+            <span data-i18n="heroSubtitle" class="mt-2 block text-3xl font-bold leading-tight text-slate-900 sm:text-5xl sm:leading-[1.12]">
+              B2B Digital Marketing &amp; Google Ads Consulting
+            </span>
+          </h1>
+
+          <!-- Brief Description -->
+          <p data-i18n="heroDescription" class="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg sm:leading-8">
+            I help B2B companies and consulting firms structure, optimize, and scale Google Ads search campaigns with accurate conversion tracking and advanced analytics.
+          </p>
+
+          <!-- Primary CTA & Secondary Section Link -->
+          <div class="mt-9 flex flex-col items-stretch gap-3.5 sm:flex-row sm:items-center">
+            <a
+              href="#contact"
+              class="interactive-target inline-flex items-center justify-center gap-2.5 rounded-lg bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-800"
+            >
+              <span data-i18n="heroCtaPrimary">Schedule a Consultation</span>
+              <svg class="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a
+              href="#services"
+              data-i18n="heroCtaSecondary"
+              class="interactive-target inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50 hover:text-slate-900"
+            >
+              Explore Consulting Services
+            </a>
+          </div>
+
+          <!-- Core Focus Pillars Strip -->
+          <dl class="mt-14 grid grid-cols-1 gap-6 border-t border-slate-200/90 pt-8 sm:grid-cols-3">
+            <div>
+              <dt data-i18n="pillar1Title" class="text-xs font-semibold uppercase tracking-wider text-slate-500">Acquisition Channel</dt>
+              <dd data-i18n="pillar1Value" class="mt-1 text-sm font-semibold text-slate-900">Google Ads Search (SEM)</dd>
+            </div>
+            <div>
+              <dt data-i18n="pillar2Title" class="text-xs font-semibold uppercase tracking-wider text-slate-500">Measurement Stack</dt>
+              <dd data-i18n="pillar2Value" class="mt-1 text-sm font-semibold text-slate-900">GA4 &amp; Google Tag Manager</dd>
+            </div>
+            <div>
+              <dt data-i18n="pillar3Title" class="text-xs font-semibold uppercase tracking-wider text-slate-500">Client Focus</dt>
+              <dd data-i18n="pillar3Value" class="mt-1 text-sm font-semibold text-slate-900">B2B Companies &amp; Advisory Firms</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Services Section (3 Cards) -->
+    <section id="services" class="scroll-mt-20 bg-slate-50/70 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <p data-i18n="servicesEyebrow" class="text-xs font-semibold uppercase tracking-widest text-blue-700">
+            Core Capabilities
+          </p>
+          <h2 data-i18n="servicesHeading" class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            Specialized B2B Search &amp; Analytics Services
+          </h2>
+          <p data-i18n="servicesIntro" class="mt-4 text-base leading-relaxed text-slate-600">
+            Structured consulting engagements designed to capture high-intent commercial demand, validate lead attribution, and maintain executive clarity across ad spend.
+          </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8">
+          <!-- Card 1: Google Ads SEM -->
+          <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-blue-50 text-blue-700 border border-blue-100" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </div>
+            <h3 data-i18n="service1Title" class="text-lg font-bold text-slate-900">
+              Google Ads Campaign Management (SEM)
+            </h3>
+            <p data-i18n="service1Desc" class="mt-3 text-sm leading-relaxed text-slate-600">
+              B2B keyword strategy, bid optimization, search terms auditing, and rigorous budget control.
+            </p>
+            <ul role="list" class="mt-6 space-y-2.5 border-t border-slate-100 pt-5 text-xs font-medium text-slate-700">
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service1Bullet1">High-intent commercial keyword segmentation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service1Bullet2">Continuous search query &amp; negative list hygiene</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service1Bullet3">Disciplined pacing &amp; bid strategy calibration</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Analytics & Conversion Tracking -->
+          <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-blue-50 text-blue-700 border border-blue-100" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3 data-i18n="service2Title" class="text-lg font-bold text-slate-900">
+              Analytics &amp; Conversion Tracking
+            </h3>
+            <p data-i18n="service2Desc" class="mt-3 text-sm leading-relaxed text-slate-600">
+              Implementation and validation of events in Google Analytics 4 (GA4), Google Tag Manager, and lead attribution.
+            </p>
+            <ul role="list" class="mt-6 space-y-2.5 border-t border-slate-100 pt-5 text-xs font-medium text-slate-700">
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service2Bullet1">Custom GA4 key event architecture &amp; QA</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service2Bullet2">Structured Google Tag Manager container deployment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service2Bullet3">Reliable form, call &amp; funnel lead attribution</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 3: Executive Reporting & Technical Auditing -->
+          <article class="flex flex-col rounded-xl border border-slate-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-blue-50 text-blue-700 border border-blue-100" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" />
+              </svg>
+            </div>
+            <h3 data-i18n="service3Title" class="text-lg font-bold text-slate-900">
+              Executive Reporting &amp; Technical Auditing
+            </h3>
+            <p data-i18n="service3Desc" class="mt-3 text-sm leading-relaxed text-slate-600">
+              Performance analysis (CTR, CPC, CPA), account diagnostics, and periodic reporting for executive decision-making.
+            </p>
+            <ul role="list" class="mt-6 space-y-2.5 border-t border-slate-100 pt-5 text-xs font-medium text-slate-700">
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service3Bullet1">Core unit-metric tracking (CTR, CPC, CPA &amp; CVR)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service3Bullet2">Structural Google Ads &amp; tracking health audits</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-blue-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                <span data-i18n="service3Bullet3">Actionable management summaries for leadership</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Working Approach Section ("Enfoque de Trabajo") -->
+    <section id="approach" class="dark-surface scroll-mt-20 bg-slate-900 py-20 text-white sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-5">
+            <p data-i18n="approachEyebrow" class="text-xs font-semibold uppercase tracking-widest text-blue-400">
+              Working Approach
+            </p>
+            <h2 data-i18n="approachHeading" class="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              Data-Driven Methodology &amp; Full Metric Transparency
+            </h2>
+            <p data-i18n="approachSummary" class="mt-4 text-base leading-relaxed text-slate-300">
+              Every consulting engagement is built around verifiable data, direct account governance, and disciplined iteration to continuously improve return on ad spend for B2B sales cycles.
+            </p>
+          </div>
+
+          <ol role="list" class="grid grid-cols-1 gap-5 sm:grid-cols-3 lg:col-span-7 lg:grid-cols-1">
+            <!-- Principle 1 -->
+            <li class="rounded-xl border border-slate-800 bg-slate-800/60 p-6">
+              <div class="flex items-start gap-4">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-blue-600/20 text-xs font-bold text-blue-300 border border-blue-500/30" aria-hidden="true">01</span>
+                <div>
+                  <h3 data-i18n="approach1Title" class="text-base font-semibold text-white">
+                    Data-Oriented Architecture
+                  </h3>
+                  <p data-i18n="approach1Desc" class="mt-1.5 text-sm leading-relaxed text-slate-300">
+                    Campaign structures and bidding decisions rely on verified conversion events and qualified search intent rather than surface-level impressions.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Principle 2 -->
+            <li class="rounded-xl border border-slate-800 bg-slate-800/60 p-6">
+              <div class="flex items-start gap-4">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-blue-600/20 text-xs font-bold text-blue-300 border border-blue-500/30" aria-hidden="true">02</span>
+                <div>
+                  <h3 data-i18n="approach2Title" class="text-base font-semibold text-white">
+                    Uncompromised Metric Transparency
+                  </h3>
+                  <p data-i18n="approach2Desc" class="mt-1.5 text-sm leading-relaxed text-slate-300">
+                    Clients retain 100% ownership and administrative access to their Google Ads, GA4, and Tag Manager accounts with clear cost and conversion visibility.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Principle 3 -->
+            <li class="rounded-xl border border-slate-800 bg-slate-800/60 p-6">
+              <div class="flex items-start gap-4">
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-blue-600/20 text-xs font-bold text-blue-300 border border-blue-500/30" aria-hidden="true">03</span>
+                <div>
+                  <h3 data-i18n="approach3Title" class="text-base font-semibold text-white">
+                    Continuous Advertising ROI Improvement
+                  </h3>
+                  <p data-i18n="approach3Desc" class="mt-1.5 text-sm leading-relaxed text-slate-300">
+                    Systematic search term audits, budget reallocation toward top-converting segments, and ongoing funnel diagnostics to lower acquisition costs over time.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section id="contact" class="scroll-mt-20 bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50/80 p-8 sm:p-12 lg:flex lg:items-center lg:justify-between lg:gap-12">
+          <div class="max-w-xl">
+            <p data-i18n="contactEyebrow" class="text-xs font-semibold uppercase tracking-widest text-blue-700">
+              Direct Commercial Contact
+            </p>
+            <h2 data-i18n="contactHeading" class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Let’s Discuss Your Google Ads &amp; Analytics Goals
+            </h2>
+            <p data-i18n="contactDesc" class="mt-3 text-base leading-relaxed text-slate-600">
+              Reach out directly via email for account audits, B2B search campaign management, or conversion tracking implementation inquiries.
+            </p>
+
+            <!-- Location -->
+            <div class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-slate-700">
+              <svg class="h-4 w-4 shrink-0 text-blue-700" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span data-i18n="contactLocation">Santiago de Querétaro, Mexico</span>
+            </div>
+          </div>
+
+          <!-- Email Card + Mailto + Copy Button -->
+          <div class="mt-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm lg:mt-0 lg:min-w-[380px]">
+            <p data-i18n="contactEmailLabel" class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Direct Email
+            </p>
+            <p id="contact-email" class="mt-1.5 break-all text-base font-semibold text-slate-900 sm:text-lg">
+              diego.amieva.olvera@gmail.com
+            </p>
+
+            <div class="mt-5 flex flex-wrap items-center gap-3">
+              <!-- Mailto Link -->
+              <a
+                href="mailto:diego.amieva.olvera@gmail.com"
+                class="interactive-target inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-800"
+              >
+                <svg class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <span data-i18n="contactSendBtn">Send Email</span>
+              </a>
+
+              <!-- Copy Button + Accessible Sibling Live Region -->
+              <span class="relative inline-flex flex-1">
+                <button
+                  type="button"
+                  command="--copy"
+                  commandfor="contact-email"
+                  class="copy-button interactive-target inline-flex w-full items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50 hover:text-slate-900"
+                >
+                  <svg class="icon-copy h-4 w-4 shrink-0 text-slate-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+                  </svg>
+                  <svg class="icon-check h-4 w-4 shrink-0 text-blue-700" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <span data-i18n="contactCopyBtn">Copy Email</span>
+                </button>
+                <span
+                  role="status"
+                  class="copy-tip absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2.5 py-1 text-xs font-medium text-white shadow-md"
+                ></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. Footer -->
+  <footer class="border-t border-slate-200 bg-slate-50 py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-4 sm:flex-row sm:items-center sm:px-6 lg:px-8">
+      <div class="space-y-1 text-sm text-slate-600">
+        <p class="font-semibold text-slate-900">Diego Amieva</p>
+        <p data-i18n="footerSubtitle">B2B Digital Marketing &amp; Google Ads Consulting — Santiago de Querétaro, Mexico</p>
+        <p data-i18n="footerCopyright" class="text-xs text-slate-500">© 2026 Diego Amieva. All rights reserved.</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-sm">
+        <a
+          href="mailto:diego.amieva.olvera@gmail.com"
+          class="interactive-target font-medium text-slate-600 transition-colors hover:text-blue-700"
+        >
+          diego.amieva.olvera@gmail.com
+        </a>
+        <button
+          type="button"
+          id="open-privacy-modal"
+          data-i18n="footerPrivacyLink"
+          class="interactive-target font-medium text-slate-700 underline decoration-slate-300 underline-offset-4 transition-colors hover:text-blue-700 hover:decoration-blue-700"
+        >
+          Privacy Policy / Política de Privacidad
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Native Modal Dialog for Privacy Policy -->
+  <dialog
+    id="privacy-dialog"
+    closedby="any"
+    aria-labelledby="privacy-dialog-title"
+    class="m-auto w-[calc(100%-2rem)] max-w-xl rounded-2xl border border-slate-200 bg-white p-0 text-slate-900 shadow-2xl"
+  >
+    <div class="p-6 sm:p-8">
+      <div class="flex items-start justify-between gap-4 border-b border-slate-200 pb-4">
+        <h1 id="privacy-dialog-title" data-i18n="privacyTitle" class="text-lg font-bold text-slate-900 sm:text-xl">
+          Privacy Policy
+        </h1>
+        <form method="dialog">
+          <button
+            type="submit"
+            value="dismiss"
+            data-i18n-aria="privacyCloseAria"
+            aria-label="Close Privacy Policy"
+            class="interactive-target -m-1 inline-flex items-center justify-center rounded-lg p-1.5 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
+          >
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="mt-5 space-y-4 text-sm leading-relaxed text-slate-600">
+        <p data-i18n="privacyP1">
+          <strong class="font-semibold text-slate-900">Data Controller:</strong> Diego Amieva, independent B2B digital marketing and Google Ads consultant based in Santiago de Querétaro, Mexico (diego.amieva.olvera@gmail.com).
+        </p>
+        <p data-i18n="privacyP2">
+          <strong class="font-semibold text-slate-900">Exclusive Commercial Attention Use:</strong> Any contact information voluntarily shared via direct email communication (such as name, corporate email address, company name, or project inquiry details) is used strictly and exclusively to respond to commercial inquiries, evaluate consulting requirements, and deliver requested professional services.
+        </p>
+        <p data-i18n="privacyP3">
+          <strong class="font-semibold text-slate-900">Data Confidentiality &amp; No Third-Party Sharing:</strong> Contact details are never sold, leased, or disclosed to unauthorized third parties. This informational website does not collect background behavioral profiles or process automated form submissions.
+        </p>
+        <p data-i18n="privacyP4">
+          <strong class="font-semibold text-slate-900">Access, Rectification &amp; Deletion Rights:</strong> You may request access to, correction of, or deletion of your contact records at any time by writing directly to diego.amieva.olvera@gmail.com.
+        </p>
+      </div>
+
+      <div class="mt-7 flex justify-end border-t border-slate-200 pt-4">
+        <form method="dialog">
+          <button
+            type="submit"
+            value="close"
+            autofocus
+            data-i18n="privacyCloseBtn"
+            class="interactive-target rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+          >
+            Close
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Client-Side Logic: Bilingual i18n, Clipboard Copy, and Native Dialog Light-Dismiss Fallback -->
+  <script>
+    (() => {
+      const translations = {
+        en: {
+          docTitle: 'Diego Amieva | B2B Digital Marketing & Google Ads Consulting',
+          skipLink: 'Skip to main content',
+          headerTagline: 'B2B Marketing & Google Ads',
+          navServices: 'Services',
+          navApproach: 'Approach',
+          navContact: 'Contact',
+          heroBadge: 'Independent Commercial Consulting Practice',
+          heroSubtitle: 'B2B Digital Marketing & Google Ads Consulting',
+          heroDescription: 'I help B2B companies and consulting firms structure, optimize, and scale Google Ads search campaigns with accurate conversion tracking and advanced analytics.',
+          heroCtaPrimary: 'Schedule a Consultation',
+          heroCtaSecondary: 'Explore Consulting Services',
+          pillar1Title: 'Acquisition Channel',
+          pillar1Value: 'Google Ads Search (SEM)',
+          pillar2Title: 'Measurement Stack',
+          pillar2Value: 'GA4 & Google Tag Manager',
+          pillar3Title: 'Client Focus',
+          pillar3Value: 'B2B Companies & Advisory Firms',
+          servicesEyebrow: 'Core Capabilities',
+          servicesHeading: 'Specialized B2B Search & Analytics Services',
+          servicesIntro: 'Structured consulting engagements designed to capture high-intent commercial demand, validate lead attribution, and maintain executive clarity across ad spend.',
+          service1Title: 'Google Ads Campaign Management (SEM)',
+          service1Desc: 'B2B keyword strategy, bid optimization, search terms auditing, and rigorous budget control.',
+          service1Bullet1: 'High-intent commercial keyword segmentation',
+          service1Bullet2: 'Continuous search query & negative list hygiene',
+          service1Bullet3: 'Disciplined pacing & bid strategy calibration',
+          service2Title: 'Analytics & Conversion Tracking',
+          service2Desc: 'Implementation and validation of events in Google Analytics 4 (GA4), Google Tag Manager, and lead attribution.',
+          service2Bullet1: 'Custom GA4 key event architecture & QA',
+          service2Bullet2: 'Structured Google Tag Manager container deployment',
+          service2Bullet3: 'Reliable form, call & funnel lead attribution',
+          service3Title: 'Executive Reporting & Technical Auditing',
+          service3Desc: 'Performance analysis (CTR, CPC, CPA), account diagnostics, and periodic reporting for executive decision-making.',
+          service3Bullet1: 'Core unit-metric tracking (CTR, CPC, CPA & CVR)',
+          service3Bullet2: 'Structural Google Ads & tracking health audits',
+          service3Bullet3: 'Actionable management summaries for leadership',
+          approachEyebrow: 'Working Approach',
+          approachHeading: 'Data-Driven Methodology & Full Metric Transparency',
+          approachSummary: 'Every consulting engagement is built around verifiable data, direct account governance, and disciplined iteration to continuously improve return on ad spend for B2B sales cycles.',
+          approach1Title: 'Data-Oriented Architecture',
+          approach1Desc: 'Campaign structures and bidding decisions rely on verified conversion events and qualified search intent rather than surface-level impressions.',
+          approach2Title: 'Uncompromised Metric Transparency',
+          approach2Desc: 'Clients retain 100% ownership and administrative access to their Google Ads, GA4, and Tag Manager accounts with clear cost and conversion visibility.',
+          approach3Title: 'Continuous Advertising ROI Improvement',
+          approach3Desc: 'Systematic search term audits, budget reallocation toward top-converting segments, and ongoing funnel diagnostics to lower acquisition costs over time.',
+          contactEyebrow: 'Direct Commercial Contact',
+          contactHeading: 'Let’s Discuss Your Google Ads & Analytics Goals',
+          contactDesc: 'Reach out directly via email for account audits, B2B search campaign management, or conversion tracking implementation inquiries.',
+          contactLocation: 'Santiago de Querétaro, Mexico',
+          contactEmailLabel: 'Direct Email',
+          contactSendBtn: 'Send Email',
+          contactCopyBtn: 'Copy Email',
+          copiedSuccess: 'Copied',
+          copiedFail: 'Copy failed',
+          footerSubtitle: 'B2B Digital Marketing & Google Ads Consulting — Santiago de Querétaro, Mexico',
+          footerCopyright: '© 2026 Diego Amieva. All rights reserved.',
+          footerPrivacyLink: 'Privacy Policy / Política de Privacidad',
+          privacyTitle: 'Privacy Policy',
+          privacyCloseAria: 'Close Privacy Policy',
+          privacyP1Html: '<strong class="font-semibold text-slate-900">Data Controller:</strong> Diego Amieva, independent B2B digital marketing and Google Ads consultant based in Santiago de Querétaro, Mexico (diego.amieva.olvera@gmail.com).',
+          privacyP2Html: '<strong class="font-semibold text-slate-900">Exclusive Commercial Attention Use:</strong> Any contact information voluntarily shared via direct email communication (such as name, corporate email address, company name, or project inquiry details) is used strictly and exclusively to respond to commercial inquiries, evaluate consulting requirements, and deliver requested professional services.',
+          privacyP3Html: '<strong class="font-semibold text-slate-900">Data Confidentiality &amp; No Third-Party Sharing:</strong> Contact details are never sold, leased, or disclosed to unauthorized third parties. This informational website does not collect background behavioral profiles or process automated form submissions.',
+          privacyP4Html: '<strong class="font-semibold text-slate-900">Access, Rectification &amp; Deletion Rights:</strong> You may request access to, correction of, or deletion of your contact records at any time by writing directly to diego.amieva.olvera@gmail.com.',
+          privacyCloseBtn: 'Close'
+        },
+        es: {
+          docTitle: 'Diego Amieva | Consultoría en Marketing Digital B2B y Google Ads',
+          skipLink: 'Saltar al contenido principal',
+          headerTagline: 'Marketing B2B y Google Ads',
+          navServices: 'Servicios',
+          navApproach: 'Enfoque',
+          navContact: 'Contacto',
+          heroBadge: 'Práctica Independiente de Consultoría Comercial',
+          heroSubtitle: 'Consultoría en Marketing Digital B2B y Google Ads',
+          heroDescription: 'Ayudo a empresas B2B y firmas de consultoría a estructurar, optimizar y escalar campañas de búsqueda en Google Ads con seguimiento de conversiones preciso y analítica avanzada.',
+          heroCtaPrimary: 'Contactar para Consultoría',
+          heroCtaSecondary: 'Ver Servicios Profesionales',
+          pillar1Title: 'Canal de Adquisición',
+          pillar1Value: 'Búsqueda en Google Ads (SEM)',
+          pillar2Title: 'Infraestructura Analítica',
+          pillar2Value: 'GA4 y Google Tag Manager',
+          pillar3Title: 'Perfil de Clientes',
+          pillar3Value: 'Empresas B2B y Firmas Consultoras',
+          servicesEyebrow: 'Servicios Principales',
+          servicesHeading: 'Soluciones Especializadas en Búsqueda B2B y Analítica',
+          servicesIntro: 'Servicios de consultoría estructurados para captar demanda comercial con alta intención, validar la atribución de prospectos y mantener claridad ejecutiva sobre la inversión.',
+          service1Title: 'Gestión de Campañas Google Ads (SEM)',
+          service1Desc: 'Estrategia de palabras clave B2B, optimización de pujas, auditoría de términos de búsqueda y control de presupuesto.',
+          service1Bullet1: 'Segmentación de palabras clave con intención comercial',
+          service1Bullet2: 'Auditoría continua de términos y listas negativas',
+          service1Bullet3: 'Control riguroso de presupuesto y calibración de pujas',
+          service2Title: 'Analítica y Seguimiento de Conversiones',
+          service2Desc: 'Implementación y validación de eventos en Google Analytics 4 (GA4), Google Tag Manager y atribución de leads.',
+          service2Bullet1: 'Arquitectura y validación de eventos clave en GA4',
+          service2Bullet2: 'Implementación estructurada en Google Tag Manager',
+          service2Bullet3: 'Atribución precisa de formularios, contactos y embudo B2B',
+          service3Title: 'Reporteo Ejecutivo y Auditoría Técnica',
+          service3Desc: 'Análisis de rendimiento (CTR, CPC, CPA), diagnóstico de cuentas y reportes periódicos para toma de decisiones.',
+          service3Bullet1: 'Monitoreo puntual de métricas clave (CTR, CPC, CPA y CVR)',
+          service3Bullet2: 'Diagnóstico técnico integral de cuentas y medición',
+          service3Bullet3: 'Reportes periódicos claros para dirección comercial',
+          approachEyebrow: 'Enfoque de Trabajo',
+          approachHeading: 'Metodología Orientada a Datos y Transparencia en Métricas',
+          approachSummary: 'Cada proyecto se fundamenta en datos verificables, gobernanza directa de las cuentas y optimización continua para mejorar el retorno de inversión publicitaria en ciclos comerciales B2B.',
+          approach1Title: 'Metodología Orientada a Datos',
+          approach1Desc: 'Las decisiones de estructura y pujas parten de conversiones verificadas e intención de búsqueda calificada, evitando métricas superficiales.',
+          approach2Title: 'Transparencia Total en Métricas',
+          approach2Desc: 'El cliente conserva siempre la titularidad y el acceso administrativo directo a sus cuentas de Google Ads, GA4 y Tag Manager con visibilidad íntegra de costos.',
+          approach3Title: 'Mejora Continua del Retorno de Inversión',
+          approach3Desc: 'Depuración constante de términos de búsqueda, reasignación eficiente del presupuesto y diagnóstico del embudo para optimizar el costo por prospecto calificado.',
+          contactEyebrow: 'Contacto Comercial Directo',
+          contactHeading: 'Conversemos sobre tus Objetivos en Google Ads y Analítica',
+          contactDesc: 'Escríbeme directamente por correo electrónico para auditorías de cuenta, gestión de campañas de búsqueda B2B o implementación de seguimiento de conversiones.',
+          contactLocation: 'Santiago de Querétaro, México',
+          contactEmailLabel: 'Correo Directo',
+          contactSendBtn: 'Enviar Correo',
+          contactCopyBtn: 'Copiar Correo',
+          copiedSuccess: 'Copiado',
+          copiedFail: 'Error al copiar',
+          footerSubtitle: 'Consultoría en Marketing Digital B2B y Google Ads — Santiago de Querétaro, México',
+          footerCopyright: '© 2026 Diego Amieva. Todos los derechos reservados.',
+          footerPrivacyLink: 'Privacy Policy / Política de Privacidad',
+          privacyTitle: 'Política de Privacidad',
+          privacyCloseAria: 'Cerrar Política de Privacidad',
+          privacyP1Html: '<strong class="font-semibold text-slate-900">Responsable de los Datos:</strong> Diego Amieva, consultor independiente en marketing digital B2B y Google Ads con ubicación en Santiago de Querétaro, México (diego.amieva.olvera@gmail.com).',
+          privacyP2Html: '<strong class="font-semibold text-slate-900">Uso Exclusivo para Atención Comercial:</strong> Los datos de contacto proporcionados voluntariamente por correo electrónico directo (nombre, correo corporativo, empresa o detalles de consulta) se utilizan única y exclusivamente para brindar atención comercial, evaluar requerimientos de consultoría y prestar los servicios profesionales solicitados.',
+          privacyP3Html: '<strong class="font-semibold text-slate-900">Confidencialidad y No Transferencia a Terceros:</strong> La información de contacto jamás es vendida, cedida ni compartida con terceros no autorizados. Este sitio informativo no recopila perfiles publicitarios ocultos ni almacena bases de datos automatizadas.',
+          privacyP4Html: '<strong class="font-semibold text-slate-900">Derechos de Acceso, Rectificación y Cancelación:</strong> En cualquier momento puedes solicitar el acceso, actualización o eliminación de tus datos de contacto escribiendo directamente a diego.amieva.olvera@gmail.com.',
+          privacyCloseBtn: 'Cerrar'
+        }
+      };
+
+      let currentLang = 'en';
+
+      const langButtons = document.querySelectorAll('[data-lang-btn]');
+      const textNodes = document.querySelectorAll('[data-i18n]');
+      const ariaNodes = document.querySelectorAll('[data-i18n-aria]');
+
+      function setLanguage(lang) {
+        if (!translations[lang]) return;
+        currentLang = lang;
+        const dict = translations[lang];
+
+        document.documentElement.lang = lang;
+        document.title = dict.docTitle;
+
+        textNodes.forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key + 'Html']) {
+            el.innerHTML = dict[key + 'Html'];
+          } else if (dict[key]) {
+            el.textContent = dict[key];
+          }
+        });
+
+        ariaNodes.forEach((el) => {
+          const key = el.getAttribute('data-i18n-aria');
+          if (dict[key]) {
+            el.setAttribute('aria-label', dict[key]);
+          }
+        });
+
+        langButtons.forEach((btn) => {
+          const isActive = btn.getAttribute('data-lang-btn') === lang;
+          btn.setAttribute('aria-pressed', String(isActive));
+          btn.className = isActive
+            ? 'rounded-md px-3 py-1.5 text-xs font-semibold tracking-wide transition-all bg-white text-blue-700 shadow-sm'
+            : 'rounded-md px-3 py-1.5 text-xs font-semibold tracking-wide transition-all text-slate-600 hover:text-slate-900';
+        });
+      }
+
+      langButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          setLanguage(btn.getAttribute('data-lang-btn'));
+        });
+      });
+
+      // Copy Button Logic (Invoker Commands + Async Clipboard + VoiceOver repeat announcement + Legacy fallback)
+      const timers = new WeakMap();
+      let lastMessage = '';
+
+      function legacyCopy(text) {
+        const previousFocus = document.activeElement;
+        const field = Object.assign(document.createElement('textarea'), { value: text });
+        field.setAttribute('readonly', '');
+        field.style.cssText = 'position:fixed;inset-block-start:0;opacity:0';
+        document.body.append(field);
+        field.select();
+        try {
+          return document.execCommand('copy');
+        } finally {
+          field.remove();
+          previousFocus?.focus({ preventScroll: true });
+        }
+      }
+
+      function report(button, ok) {
+        const tip = button.nextElementSibling;
+        clearTimeout(timers.get(button));
+        button.removeAttribute('data-copied');
+        button.removeAttribute('data-failed');
+
+        const dict = translations[currentLang];
+        let message = ok ? dict.copiedSuccess : dict.copiedFail;
+        if (message === lastMessage) message += '\u00A0';
+        lastMessage = message;
+
+        tip.textContent = '';
+        void button.offsetWidth;
+        button.setAttribute(ok ? 'data-copied' : 'data-failed', '');
+        requestAnimationFrame(() => {
+          tip.textContent = message;
+        });
+
+        timers.set(button, setTimeout(() => {
+          button.removeAttribute('data-copied');
+          button.removeAttribute('data-failed');
+          tip.textContent = '';
+        }, 2200));
+      }
+
+      async function copy(button, target) {
+        const text = target.matches('input, textarea') ? target.value : target.innerText.trim();
+        if (!text) return;
+        try {
+          await navigator.clipboard.writeText(text);
+          report(button, true);
+        } catch {
+          if (legacyCopy(text)) {
+            report(button, true);
+          } else {
+            report(button, false);
+          }
+        }
+      }
+
+      if ('CommandEvent' in window) {
+        document.addEventListener('command', (event) => {
+          if (event.command.startsWith('--copy')) {
+            copy(event.source, event.target);
+          }
+        }, true);
+      } else {
+        document.addEventListener('click', (event) => {
+          if (event.defaultPrevented) return;
+          const button = event.target.closest('button[command^="--copy"]');
+          if (!button) return;
+          const target = document.getElementById(button.getAttribute('commandfor'));
+          if (target) copy(button, target);
+        });
+      }
+
+      // Privacy Policy Modal Dialog Logic + Light-Dismiss Fallback
+      const privacyDialog = document.getElementById('privacy-dialog');
+      const openPrivacyBtn = document.getElementById('open-privacy-modal');
+
+      openPrivacyBtn.addEventListener('click', () => {
+        privacyDialog.showModal();
+      });
+
+      privacyDialog.addEventListener('close', () => {
+        privacyDialog.returnValue = '';
+      });
+
+      if (!('closedBy' in HTMLDialogElement.prototype)) {
+        const outside = (e, dialog) => {
+          const r = dialog.getBoundingClientRect();
+          return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+        };
+        for (const dialog of document.querySelectorAll('dialog[closedby="any"]')) {
+          let pressedOutside = false;
+          dialog.addEventListener('pointerdown', (e) => {
+            pressedOutside = outside(e, dialog);
+          });
+          dialog.addEventListener('pointerup', (e) => {
+            if (pressedOutside && outside(e, dialog)) dialog.close();
+          });
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
